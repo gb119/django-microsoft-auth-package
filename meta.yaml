@@ -16,6 +16,7 @@ build:
 requirements:
   host:
     - django >=2.2
+    - flit-core
     - pip
     - pyjwt[crypto] <3.0
     - python
@@ -23,6 +24,7 @@ requirements:
     - requests-oauthlib
   run:
     - django >=2.2
+    - flit-core
     - pyjwt[crypto] <3.0
     - python
     - requests
