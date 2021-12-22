@@ -6,7 +6,7 @@ package:
   version: "{{ version }}"
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
+  url: "https://github.com/AngellusMortis/django_microsoft_auth/archive/refs/tags/2.4.1.tar.gz"
   sha256: b712a84fa5f9b58373b9dc31bf9768f3df6a7ad2c1fbddb0354ed9f03fdb2162
 
 build:
