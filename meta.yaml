@@ -1,0 +1,47 @@
+{% set name = "django-microsoft-auth" %}
+{% set version = "2.4.1" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
+  sha256: b712a84fa5f9b58373b9dc31bf9768f3df6a7ad2c1fbddb0354ed9f03fdb2162
+
+build:
+  number: 0
+  script: "{{ PYTHON }} -m pip install . -vv"
+
+requirements:
+  host:
+    - django >=2.2
+    - pip
+    - pyjwt[crypto] <3.0
+    - python
+    - requests
+    - requests-oauthlib
+  run:
+    - django >=2.2
+    - pyjwt[crypto] <3.0
+    - python
+    - requests
+    - requests-oauthlib
+
+test:
+  imports:
+    - microsoft_auth
+    - microsoft_auth.migrations
+
+about:
+  home: https://github.com/AngellusMortis/django_microsoft_auth
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: "Simple app to enable Microsoft Account, Office 365 and Xbox Live authentcation as a"
+  doc_url: https://django-microsoft-auth.readthedocs.io/ 
+  dev_url: https://github.com/AngellusMortis/django_microsoft_auth
+
+extra:
+  recipe-maintainers:
+    - https://github.com/gb119
