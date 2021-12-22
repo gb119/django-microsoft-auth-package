@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://github.com/AngellusMortis/django_microsoft_auth/archive/refs/tags/2.4.1.tar.gz"
-  sha256: b712a84fa5f9b58373b9dc31bf9768f3df6a7ad2c1fbddb0354ed9f03fdb2162
+  sha256: 63318e6a84034b7c819474898645fb2d5f5c8f046e8d82454a11bf9082b6fbeb
 
 build:
   number: 0
